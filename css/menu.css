@@ -6,7 +6,9 @@
 .slideBar {
     background-color: #282A35;
     display: flex;
-    padding: 60px;
+    padding: 50px;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .textNav {
