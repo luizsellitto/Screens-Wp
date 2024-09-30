@@ -2,7 +2,13 @@
     position: relative;
     display: flex;
     flex-direction: column;
-}   
+}
+
+.active {
+    color: red;
+    font-weight: bold;
+}
+
 .slideBar {
     background-color: #282A35;
     display: flex;
@@ -16,10 +22,9 @@
 }
 
 
-
 .sairMenu {
-    padding-right:20px;
-    padding-left:20px;
+    padding-right: 20px;
+    padding-left: 20px;
 
 }
 
@@ -36,31 +41,30 @@ a:hover {
     color: white;
 }
 
-.logoMenu
-{
-    width:110px;
-    height:110px;
+.logoMenu {
+    width: 110px;
+    height: 110px;
 }
 
 @media (min-width : 640px) {
- .page {
-    flex-direction: row;
- }
+    .page {
+        flex-direction: row;
+    }
 
- .slideBar {
-    height: 100vh;
-    width: auto;
-    top: 0;
-    position: sticky;
-    display: block;
- }
+    .slideBar {
+        height: 100vh;
+        width: auto;
+        top: 0;
+        position: sticky;
+        display: block;
+    }
 
- .sairMenu {
-    padding-right:40px;
-    padding-left:40px;
-}
-#meumenu {
-    height: 75%;
-}
-}
+    .sairMenu {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
 
+    #meumenu {
+        height: 75%;
+    }
+}

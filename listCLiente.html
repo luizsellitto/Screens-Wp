@@ -1,213 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clientes</title>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
     <div class="page">
-        <nav class="slideBar">
-            <div class="container">
-                <a href="index.html" class="">
-                    <img class="logoMenu" src="img/image.png">
-                </a>
-            </div>
+      <div id="navbar"></div>
 
-            <div class="navbar navbar-expand-md navbar-dark mt-5">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target = "#meumenu" aria-controls="meumenu"
-                 aria-expanded="false" aria-label="Menu Exemplo">
-                 <span class="navbar-toggler-icon"></span>
-               </button>
-
-                <div class="collapse navbar-collapse" id="meumenu">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link textNav" href="/home.html">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link textNav" href="listCliente.html">Clientes</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link textNav" href="listFornecedor.html">Fornecedores</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link textNav active" href="listCompra.html">Compra</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link textNav" href="produto.html">Produtos</a>
-                        </li>
-                        
-                        <a href="/index.html"><button class="btn-danger sairMenu">
-                            Sair
-                         </button></a>
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-        <main>
-            <div>
-                
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Cadastrar Cliente
-                </button>
-            </div>
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Cadastro de Cliente</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <main class="container">
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Cadastrar Cliente
+          </button>
+        </div>
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Cadastro de Cliente
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>Cadastre um Cliente</p>
+                <hr />
+                <form>
+                  <div class="row">
+                    <!--LINHA 1-->
+                    <div class="form-group col-5">
+                      <label>Nome: *</label>
+                      <input type="text" class="form-control" />
                     </div>
-                    <div class="modal-body">
-                        <p>Cadastre um Cliente</p>
-                        <hr>
-                        <form>
-                            <div class="row"><!--LINHA 1-->
-                                <div class="form-group col-5">
-                                    <label>Nome: *</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-3">
-                                    <label>Data Nascimento: *</label>
-                                    <input type="text" class="form-control">
-                                </div>
-
-                                <div class="form-group col-3">
-                                    <label>Sexo: </label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                
-                                
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-3">
-                                    <label>RG:</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-4">
-                                    <label>CPF:</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                
-                                <div class="form-group col-4">
-                                    <label>CNPJ:</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-
-
-
-                            <hr>
-                            <div class="row"><!--LINHA 2-->
-                                <div class="form-group col-2">
-                                    <label>CEP: *</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-5">
-                                    <label>Bairro: *</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-4">
-                                    <label>Rua: *</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row"><!--LINHA 4-->
-                                <div class="form-group col-2">
-                                    <label>Número: *</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group col-4">
-                                    <label>Estado: *</label>
-                                    <select class="form-control">
-                                        <option value="">--Selecionar--</option>
-                                        <option value="AC">Acre (AC)</option>
-                                        <option value="AL">Alagoas (AL)</option>
-                                        <option value="AP">Amapá (AP)</option>
-                                        <option value="AM">Amazonas (AM)</option>
-                                        <option value="BA">Bahia (BA)</option>
-                                        <option value="CE">Ceará (CE)</option>
-                                        <option value="DF">Distrito Federal (DF)</option>
-                                        <option value="ES">Espírito Santo (ES)</option>
-                                        <option value="GO">Goiás (GO)</option>
-                                        <option value="MA">Maranhão (MA)</option>
-                                        <option value="MT">Mato Grosso (MT)</option>
-                                        <option value="MS">Mato Grosso do Sul (MS)</option>
-                                        <option value="MG">Minas Gerais (MG)</option>
-                                        <option value="PA">Pará (PA)</option>
-                                        <option value="PB">Paraíba (PB)</option>
-                                        <option value="PR">Paraná (PR)</option>
-                                        <option value="PE">Pernambuco (PE)</option>
-                                        <option value="PI">Piauí (PI)</option>
-                                        <option value="RJ">Rio de Janeiro (RJ)</option>
-                                        <option value="RN">Rio Grande do Norte (RN)</option>
-                                        <option value="RS">Rio Grande do Sul (RS)</option>
-                                        <option value="RO">Rondônia (RO)</option>
-                                        <option value="RR">Roraima (RR)</option>
-                                        <option value="SC">Santa Catarina (SC)</option>
-                                        <option value="SP">São Paulo (SP)</option>
-                                        <option value="SE">Sergipe (SE)</option>
-                                        <option value="TO">Tocantins (TO)</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-5">
-                                    <label>Cidade: *</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                
-                            </div>
-
-
-
-                            <hr>
-                            <div class="row">
-                                <div class="form-group col-5">
-                                    <label>Contato 1: *</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                
-                            </div>
-                            
-                            <div class="row">
-                                <div class="form-group col-6">
-                                    <label>Email 1: *</label>
-                                    <input type="email" class="form-control">
-                                </div>
-                                <div class="form-group col-6">
-                                    <label>Email 2:</label>
-                                    <input type="email" class="form-control">
-                                </div>
-                            </div>
-                            <br>
-                        </form>
+                    <div class="form-group col-3">
+                      <label>Data Nascimento: *</label>
+                      <input type="text" class="form-control" />
                     </div>
-                    <div class="modal-footer">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-success">
-                                    Salvar <i class="bi bi-floppy"></i>
-                                </button>
-                            
-                                <button type="submit" class="btn btn-danger">
-                                    Cancelar <i class="bi bi-arrow-left-circle"></i>
-                                </button>
-                            </div>
+
+                    <div class="form-group col-3">
+                      <label>Sexo: </label>
+                      <input type="text" class="form-control" />
                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-3">
+                      <label>RG:</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group col-4">
+                      <label>CPF:</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="form-group col-4">
+                      <label>CNPJ:</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+
+                  <hr />
+                  <div class="row">
+                    <!--LINHA 2-->
+                    <div class="form-group col-2">
+                      <label>CEP: *</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group col-5">
+                      <label>Bairro: *</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group col-4">
+                      <label>Rua: *</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!--LINHA 4-->
+                    <div class="form-group col-2">
+                      <label>Número: *</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group col-4">
+                      <label>Estado: *</label>
+                      <select class="form-control">
+                        <option value="">--Selecionar--</option>
+                        <option value="AC">Acre (AC)</option>
+                        <option value="AL">Alagoas (AL)</option>
+                        <option value="AP">Amapá (AP)</option>
+                        <option value="AM">Amazonas (AM)</option>
+                        <option value="BA">Bahia (BA)</option>
+                        <option value="CE">Ceará (CE)</option>
+                        <option value="DF">Distrito Federal (DF)</option>
+                        <option value="ES">Espírito Santo (ES)</option>
+                        <option value="GO">Goiás (GO)</option>
+                        <option value="MA">Maranhão (MA)</option>
+                        <option value="MT">Mato Grosso (MT)</option>
+                        <option value="MS">Mato Grosso do Sul (MS)</option>
+                        <option value="MG">Minas Gerais (MG)</option>
+                        <option value="PA">Pará (PA)</option>
+                        <option value="PB">Paraíba (PB)</option>
+                        <option value="PR">Paraná (PR)</option>
+                        <option value="PE">Pernambuco (PE)</option>
+                        <option value="PI">Piauí (PI)</option>
+                        <option value="RJ">Rio de Janeiro (RJ)</option>
+                        <option value="RN">Rio Grande do Norte (RN)</option>
+                        <option value="RS">Rio Grande do Sul (RS)</option>
+                        <option value="RO">Rondônia (RO)</option>
+                        <option value="RR">Roraima (RR)</option>
+                        <option value="SC">Santa Catarina (SC)</option>
+                        <option value="SP">São Paulo (SP)</option>
+                        <option value="SE">Sergipe (SE)</option>
+                        <option value="TO">Tocantins (TO)</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-5">
+                      <label>Cidade: *</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+
+                  <hr />
+                  <div class="row">
+                    <div class="form-group col-5">
+                      <label>Contato 1: *</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="form-group col-6">
+                      <label>Email 1: *</label>
+                      <input type="email" class="form-control" />
+                    </div>
+                    <div class="form-group col-6">
+                      <label>Email 2:</label>
+                      <input type="email" class="form-control" />
+                    </div>
+                  </div>
+                  <br />
+                </form>
+              </div>
+              <div class="modal-footer">
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success">
+                    Salvar <i class="bi bi-floppy"></i>
+                  </button>
+
+                  <button type="submit" class="btn btn-danger">
+                    Cancelar <i class="bi bi-arrow-left-circle"></i>
+                  </button>
                 </div>
-                </div>
+              </div>
             </div>
-        </main>
+          </div>
+        </div>
+      </main>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/ReloadNavBar.js"></script>
+  </body>
 </html>
