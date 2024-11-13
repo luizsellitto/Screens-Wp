@@ -10,21 +10,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
+
+
+
   <body>
     <div class="page">
       <div id="navbar"></div>
 
       <main class="container">
-        <div>
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            Cadastrar Cliente
-          </button>
-        </div>
         <div
           class="modal fade"
           id="staticBackdrop"
@@ -33,159 +26,125 @@
           tabindex="-1"
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
-        >
-          <div class="modal-dialog modal-xl modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                  Cadastro de Cliente
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <p>Cadastre um Cliente</p>
-                <hr />
-                <form>
-                  <div class="row">
-                    <!--LINHA 1-->
-                    <div class="form-group col-5">
-                      <label>Nome: *</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-3">
-                      <label>Data Nascimento: *</label>
-                      <input type="text" class="form-control" />
-                    </div>
+        ></div>
 
-                    <div class="form-group col-3">
-                      <label>Sexo: </label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-group col-3">
-                      <label>RG:</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-4">
-                      <label>CPF:</label>
-                      <input type="text" class="form-control" />
-                    </div>
-
-                    <div class="form-group col-4">
-                      <label>CNPJ:</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div class="row">
-                    <!--LINHA 2-->
-                    <div class="form-group col-2">
-                      <label>CEP: *</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-5">
-                      <label>Bairro: *</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-4">
-                      <label>Rua: *</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <!--LINHA 4-->
-                    <div class="form-group col-2">
-                      <label>Número: *</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="form-group col-4">
-                      <label>Estado: *</label>
-                      <select class="form-control">
-                        <option value="">--Selecionar--</option>
-                        <option value="AC">Acre (AC)</option>
-                        <option value="AL">Alagoas (AL)</option>
-                        <option value="AP">Amapá (AP)</option>
-                        <option value="AM">Amazonas (AM)</option>
-                        <option value="BA">Bahia (BA)</option>
-                        <option value="CE">Ceará (CE)</option>
-                        <option value="DF">Distrito Federal (DF)</option>
-                        <option value="ES">Espírito Santo (ES)</option>
-                        <option value="GO">Goiás (GO)</option>
-                        <option value="MA">Maranhão (MA)</option>
-                        <option value="MT">Mato Grosso (MT)</option>
-                        <option value="MS">Mato Grosso do Sul (MS)</option>
-                        <option value="MG">Minas Gerais (MG)</option>
-                        <option value="PA">Pará (PA)</option>
-                        <option value="PB">Paraíba (PB)</option>
-                        <option value="PR">Paraná (PR)</option>
-                        <option value="PE">Pernambuco (PE)</option>
-                        <option value="PI">Piauí (PI)</option>
-                        <option value="RJ">Rio de Janeiro (RJ)</option>
-                        <option value="RN">Rio Grande do Norte (RN)</option>
-                        <option value="RS">Rio Grande do Sul (RS)</option>
-                        <option value="RO">Rondônia (RO)</option>
-                        <option value="RR">Roraima (RR)</option>
-                        <option value="SC">Santa Catarina (SC)</option>
-                        <option value="SP">São Paulo (SP)</option>
-                        <option value="SE">Sergipe (SE)</option>
-                        <option value="TO">Tocantins (TO)</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-5">
-                      <label>Cidade: *</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-
-                  <hr />
-                  <div class="row">
-                    <div class="form-group col-5">
-                      <label>Contato 1: *</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="form-group col-6">
-                      <label>Email 1: *</label>
-                      <input type="email" class="form-control" />
-                    </div>
-                    <div class="form-group col-6">
-                      <label>Email 2:</label>
-                      <input type="email" class="form-control" />
-                    </div>
-                  </div>
-                  <br />
-                </form>
-              </div>
-              <div class="modal-footer">
-                <div class="form-group">
-                  <button type="submit" class="btn btn-success">
-                    Salvar <i class="bi bi-floppy"></i>
-                  </button>
-
-                  <button type="submit" class="btn btn-danger">
-                    Cancelar <i class="bi bi-arrow-left-circle"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
+        <div class=" d-grid gap-2 d-md-flex justify-content-md-end mt-5">
+          <div class="input-group mb-3 col d-flex" role="search">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="bi bi-search"></i>
+            </span>
+            <input class="form-control me-md-2" type="search" placeholder="Search" aria-label="Search">
           </div>
+
+          <button class="form-group col-2 btn btn-dark me-md-2" type="button" >
+            <a href="cadCliente.html">Cadastrar Cliente</a>
+          </button>
+
+          <button class="form-group col-2 btn btn-dark" type="button">
+            <span class=" bi bi-printer-fill">
+            Gerar PDF
+          </button>
         </div>
+
+        <table class="table table-striped table-hover mt-2">
+            <thead >
+              <tr class="table-dark">
+                <th scope="col">ID</th>
+                <th scope="col">Fornecedor</th>
+                <th scope="col">Mês1</th>
+                <th scope="col">Mês2</th>
+                <th scope="col">Mês3</th>
+                <th scope="col">Mês4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Luiz Augusto</td>
+                <td>R$50.000,00</td>
+                <td>R$50.000,00</td>
+                <td>R$50.000,00</td>
+                <td>R$50.000,00</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Nicoly</td>
+                <td>R$10.000,00</td>
+                <td>R$10.000,00</td>
+                <td>R$10.000,00</td>
+                <td>R$10.000,00</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Thiciane Fernanda</td>
+                <td>R$3.000,00</td>
+                <td>R$7.000,00</td>
+                <td>R$1.000,00</td>
+                <td>R$99.999,99</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Pedro Henrique</td>
+                <td>R$5.000,00</td>
+                <td>R$5.000,00</td>
+                <td>R$5.000,00</td>
+                <td>R$5.000,00</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Alessandra</td>
+                <td>R$69.000,00</td>
+                <td>R$69.000,00</td>
+                <td>R$69.000,00</td>
+                <td>R$69.000,00</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Maria Luiza</td>
+                <td>R$100.000,00</td>
+                <td>R$19.000,00</td>
+                <td>R$55.000,00</td>
+                <td>R$67.000,00</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Júlio César</td>
+                <td>R$99.999,99</td>
+                <td>R$99.999,99</td>
+                <td>R$99.999,99</td>
+                <td>R$99.999,99</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Kayky</td>
+                <td>R$100.000,00</td>
+                <td>R$19.000,00</td>
+                <td>R$55.000,00</td>
+                <td>R$67.000,00</td>
+              </tr>
+              <thead>
+                <tr class="table-dark">
+                    <th scope="row">Total</th>
+                    <td></td>
+                    <th>R$???</th>
+                    <th>R$???</th>
+                    <th>R$???</th>
+                    <th>R$???</th>
+                </tr>
+              </thead>
+            </tbody>
+        </table>     
       </main>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+
     <script src="/ReloadNavBar.js"></script>
+
   </body>
 </html>
