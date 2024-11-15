@@ -1,5 +1,5 @@
 function ReloadNavBar() {
-    fetch('navbar.html')
+    fetch('navbarcopy.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar').innerHTML = data;
@@ -9,3 +9,4 @@ function ReloadNavBar() {
 ReloadNavBar();
 
 //falta adicionar a classe active
+
