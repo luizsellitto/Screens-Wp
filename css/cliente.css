@@ -1,42 +1,17 @@
-form{
-  margin-left: 15%;
-}
-
-input{
-    border: 2px solid white;
-    transition: border-color 0.3s, background-color 0.3s;
-  }
-
-  input:hover {
-    border-color: #072d08; /* Muda a cor da borda */
-    background-color: white; /* Muda a cor de fundo */
+  form{
+    margin-left: 15%;
   }
 
   input:focus {
-    border-color: #072d08 !important;
-    background-color: white !important;
-    box-shadow: #072d08 !important;
-    outline: none;
-  }
-
-  select{
-    border: 2px solid #ccc;
-    transition: border-color 0.3s, background-color 0.3s;
+    border-color: #072d08; /* Muda a cor da borda */
+    background-color: white; /* Muda a cor de fundo */
+    
   }
 
   select:hover {
     border-color: #072d08; /* Muda a cor da borda */
     background-color: white; /* Muda a cor de fundo */
   }
-
-  select:focus {
-
-    border-color:#072d08 !important;
-    background-color: white !important;
-    box-shadow: #072d08 !important;
-    outline: none;
-  }
-
 
   label{
     color:black;
