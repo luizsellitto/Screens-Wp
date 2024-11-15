@@ -55,11 +55,7 @@ h1:after{
     width: 95%;
     margin-left: 2.5%;
     height: 60px;
-<<<<<<< Updated upstream
     background-color: #16423C;
-=======
-    background-color: #0d5330;
->>>>>>> Stashed changes
     border-radius: 5px;
     border: none;
     transition: all .4s;
@@ -67,11 +63,6 @@ h1:after{
 }
 
 .Button:hover {
-<<<<<<< Updated upstream
   color: #E5BA73;
   background-color: #13312d;
-=======
-  color: #fff;
-  background-color: #0d5330;
->>>>>>> Stashed changes
 }

@@ -1,7 +1,7 @@
     .container {
         margin-top: 5%;
         margin-left: 5%;
-        width: 100%;
+        width: 80%;
         align-items: center;
         
         
@@ -49,5 +49,5 @@
 
     .area {
         height: 150px;
-        width: 900px;
+        width: 1000px;
     }
