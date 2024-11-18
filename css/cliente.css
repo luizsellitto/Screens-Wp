@@ -1,5 +1,6 @@
   form{
-    margin-left: 15%;
+    margin-left: 5%;
+    margin-right: 7%;
   }
 
   input:hover {
@@ -79,6 +80,7 @@
 
   .botoes{
     margin-left: 50%;
+    margin-top: 5%;
   }
 
   .area 

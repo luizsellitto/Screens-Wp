@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     MascaraCpf();
     MascaraFone();
     MascaraCnpj();
+    MascaraRg();
 });
 
 function MascaraCpf() {
@@ -27,3 +28,4 @@ function MascaraCnpj() {
         mask: '00.000.000/0000-00'
     });
 }
+
