@@ -1,0 +1,10 @@
+input:hover {
+    border-color: #072d08; /* Muda a cor da borda */
+    background-color: white; /* Muda a cor de fundo */
+    
+  }
+
+  select:hover {
+    border-color: #072d08; /* Muda a cor da borda */
+    background-color: white; /* Muda a cor de fundo */
+  }

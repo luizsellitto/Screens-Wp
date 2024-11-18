@@ -2,7 +2,7 @@ form{
   margin-left: 15%;
 }
 
-input:focus {
+input:hover {
   border-color: #072d08; /* Muda a cor da borda */
   background-color: white; /* Muda a cor de fundo */
   
