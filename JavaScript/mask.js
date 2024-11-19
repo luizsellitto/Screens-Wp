@@ -29,3 +29,9 @@ function MascaraCnpj() {
     });
 }
 
+function MascaraRg() {
+    var rgMask = IMask(Rg, {
+        mask: '00.000.000-0'
+    });
+}
+
