@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro Aluguel</title>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/cadProduto.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="page">
+      <div id="navbar"></div>
+
+      <div class="container">
+        <h1 class="tittle">Cadastro Aluguel</h1>
+        <hr />
+
+        <br>
+        <div class="textbox">
+          <form>
+            <div class="row">
+              <div class="form-group col-3">
+                <label>Cliente: *</label>
+                <select class="form-control">
+                    <option value="">--Selecionar--</option>
+                    <option value="">Pedro</option>
+                    <option value="">Selma</option>
+                    <option value="">Paulo</option>
+                </select>
+              </div>
+
+              <div class="form-group col-3">
+                <label>Produto: *</label>
+                <select class="form-control">
+                    <option value="">--Selecionar--</option>
+                    <option value="">Terno</option>
+                    <option value="">Vestidos</option>
+                   
+                </select>
+              </div>
+
+              <div class="form-group col-3">
+                <label>Funcionário: </label>
+                <select class="form-control">
+                    <option value="">--Selecionar--</option>
+                    <option value="">Gucci</option>
+                    <option value="">Prada</option>
+                    <option value="">Farm</option>
+                </select>
+              </div>
+
+              <div class="form-group col-2">
+                <label>Cor: </label>
+                <select class="form-control">
+                    <option value="">--Selecionar--</option>
+                    <option value="">Vermelho</option>
+                    <option value="">Verde</option>
+                    <option value="">Azul</option>
+                </select>
+              </div>
+
+            
+            </div>
+
+            <br/> <br>
+            <div class="row">
+              <div class="form-group col-2 tx_borda">
+                <label>Quantidade(s):</label>
+                <select class="form-control">
+                    <option value="">--Selecionar--</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+              </div>
+
+              <div class="form-group col-1">
+                <label>Tamanho:</label>
+                <select class="form-control">
+                    <option value=""></option>
+                    <option value="">P</option>
+                    <option value="">M</option>
+                    <option value="">G</option>
+                    <option value="">GG</option>
+               
+                </select>
+              </div>
+
+              <div class="form-group col-2">
+                <label>Valor:</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <div class="form-group col-3">
+                <label>Data Retirada:</label>
+                <input type="date" class="form-control" />
+              </div>
+
+              <div class="form-group col-3">
+                <label>Data devoluçāo:</label>
+                <input type="date" class="form-control" />
+              </div>
+            </div>
+
+            <br><br>
+
+            <div class="botoes">
+              <button type="submit" class="btn_can">Cancelar</button>
+              <button type="submit" class="btn_cad">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/ReloadNavBar.js"></script>
+  </body>
+</html>
