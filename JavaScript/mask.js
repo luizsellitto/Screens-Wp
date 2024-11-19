@@ -1,5 +1,8 @@
 var cpf = document.getElementById('cpf');
 var fone = document.getElementById('fone');
+var cnpj = document.getElementById('cnpj');
+var rg = document.getElementById('rg');
+var cep = document.getElementById('cep');
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -7,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     MascaraFone();
     MascaraCnpj();
     MascaraRg();
+    MascaraCep();
 });
 
 function MascaraCpf() {
@@ -30,8 +34,13 @@ function MascaraCnpj() {
 }
 
 function MascaraRg() {
-    var rgMask = IMask(Rg, {
+    var rgMask = IMask(rg, {
         mask: '00.000.000-0'
     });
 }
 
+function MascaraCep() {
+    var rgMask = IMask(cep, {
+        mask: '00000-000'
+    });
+}

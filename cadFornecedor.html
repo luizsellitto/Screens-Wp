@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/page.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/cadProduto.css" />
   </head>
@@ -19,21 +19,21 @@
             <div class="row">
               <div class="form-group col-4">
                 <label>Cnpj: </label>
-                <input id="cnpj" type="text" class="form-control" />
+                <input id="cnpj" type="text" placeholder="00.000.000/0001-00" class="form-control" />
               </div>
 
               <div class="form-group col-4">
                 <label>Razão Social: </label>
-                <input type="text" class="form-control" />
+                <input type="text"  class="form-control" />
               </div>
 
               <div class="form-group col-4">
                 <label>Nome Fantasia: </label>
-                <input type="text" class="form-control" />
+                <input type="text"  placeholder="Nome Fantasia"class="form-control" />
               </div>
             </div>
 
-            <br />
+            <br/>
 
             <div class="row">
               <div class="form-group col-4">
@@ -48,7 +48,7 @@
 
               <div class="form-group col-4">
                 <label>Responsável: </label>
-                <input type="text" class="form-control" />
+                <input type="text" placeholder="Responsável"class="form-control" />
               </div>
             </div>
 
@@ -57,12 +57,12 @@
             <div class="row">
               <div class="form-group col-3">
                 <label>CEP:</label>
-                <input type="text" class="form-control" />
+                <input type="text"  placeholder="00000-000" class="form-control" id="cep" />
               </div>
 
               <div class="form-group col-3">
                 <label>Numero:</label>
-                <input type="text" class="form-control" />
+                <input type="text"  placeholder="99" class="form-control" />
               </div>
 
               <div class="form-group col-3">
@@ -81,13 +81,14 @@
               </div>
             </div>
 
-            <br />
+            <br/>
 
             <div class="row">
               <div class="form-group col-4">
                 <label>Cidade: </label>
                 <select class="form-select">
-                  <option value="">--Ji-Paraná--</option>
+                  <option value="">--Selecionar--</option>
+                  <option value="">Ji-Paraná</option>
                   <option value="1">Jarú</option>
                   <option value="2">Cacoal</option>
                 </select>
@@ -95,12 +96,12 @@
 
               <div class="form-group col-4">
                 <label>Contato</label>
-                <input type="text" class="form-control" />
+                <input type="text" placeholder="(00) 00000-0000"class="form-control" id="fone"/>
               </div>
 
               <div class="form-group col-4">
                 <label>Email</label>
-                <input type="text" class="form-control" />
+                <input type="text" placeholder="exemplo@gmail.com"class="form-control" />
               </div>
             </div>
 
