@@ -1,5 +1,6 @@
 form{
-  margin-left: 15%;
+  margin-left: 5%;
+  margin-right: 7%;
 }
 
 input:hover {
@@ -36,9 +37,7 @@ label{
 
 
 .tittle{
-
   text-align: center;
-
  }
 
 h1:after{
