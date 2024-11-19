@@ -9,4 +9,3 @@ function ReloadNavBar() {
 ReloadNavBar();
 
 //falta adicionar a classe active
-

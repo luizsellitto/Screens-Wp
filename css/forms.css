@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none !important;
+    color: white;
+}
+.btn-cadastrar{
+    background-color: #16423C;
+    /* color: #E5BA73; */
+}
+.btn-cadastrar:hover{
+    background-color: #16423cdb;
+}
+
+.btn-pencil{
+    background-color: #16423C;
+    color: white;
+}
+.btn-pencil:hover{
+    background-color: #16423cdb;
+    /* color: #E5BA73; */
+}
+.btn-trash{
+    background-color: #A0153E;
+    color: white;   
+}
+.btn-trash:hover{
+    background-color: #a0153fd8;
+}
