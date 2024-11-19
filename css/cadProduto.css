@@ -40,7 +40,7 @@
         color: #16423C;
         padding: 10px;
         border-radius: 10px;
-        width: 10%;
+       
         float: right;
         margin-right: 8%;
         border: 1px solid grey;
@@ -48,7 +48,6 @@
 
     .btn_cad {
         padding: 10px;
-        width: 10%;
         color: #E5BA73;
         background-color: #16423C;
         border-radius: 10px;
@@ -60,5 +59,7 @@
 
     .area {
         height: 150px;
-        width: 1000px;
+        width: 1500%;
+        border-radius: 10px;
+        border: 1px solid grey;
     }

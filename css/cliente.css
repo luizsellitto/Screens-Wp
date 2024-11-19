@@ -26,7 +26,7 @@
   {
     margin-top: 5%;
     margin-left: 5%;
-    width: 100%;
+    width: 80%;
     align-items: center;
     
   }
@@ -57,7 +57,6 @@
       color: #16423C;
       padding: 10px;
       border-radius: 10px;
-      width: 20%;
       float: right;
       margin-right: 8%;
       margin-left: 2%;
@@ -68,7 +67,6 @@
   .btn_cad 
   {
       padding: 10px;
-      width: 20%;
       color: #E5BA73;
       background-color: #16423C;
       border-radius: 10px;
