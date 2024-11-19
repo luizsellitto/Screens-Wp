@@ -1,223 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Produtos</title>
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/listas.css">
-  </head>
 
-  <body>
-  
-    <div class="page">
-      <div id="navbar"></div>
-  
-        <main class="container">
-            <div>
-                <h1 class="tittle">Fornecedor</h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>Produtos</title>
+  <link rel="stylesheet" href="css/page.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/forms.css">
+</head>
 
-              
-                <h4 class="subtittle"><b>Filtros</b></h4>
-                <form>
-                    <div class="row">
-                      <div class="form-group col-3">
-                        <label class="text"><b>Nome Fantasia:</b> </label>
-                        <select class="form-control">
-                            <option value="">--Selecionar--</option>
-                            <option value="">xxxxxxxxx</option>
-                            <option value="">xxxxxxxxx</option>
-                            <option value="">xxxxxxxxx</option>
-                        </select>
-                      </div>
-                    
-                      <div class="form-group col-3">
-                      <label class="text"><b>Responsavel:</b> </label>
-                      <select class="form-control">
-                          <option value="">--Selecionar--</option>
-                          <option value="">xxxxxxxxx</option>
-                          <option value="">xxxxxxxxx</option>
-                          <option value="">xxxxxxxxx</option>
-                      </select>
-                     </div>
-                  
-                        <div class="form-group col-2">
-                            <label class="text"><b>Cidade:</b></label>
-                            <select class="form-control">
-                              <option value="">--Selecionar--</option>
-                              <option value="">Ji-Paraná</option>
-                              <option value="">xxxxxxxxx</option>
-                              <option value="">xxxxxxxxx</option>
-                              <option value="">xxxxxxxxx</option>
-                          </select>
-                        </div>    
+<body>
 
-                        <div class="form-group col-2">
-                          <label class="text"><b>Estado:</b> </label>
-                            <select class="form-control">
-                              <option value="">--Selecionar--</option>
-                              <option value="">Rondonia</option>
-                              <option value="">xxxxxxxxx</option>
-                              <option value="">xxxxxxxxx</option>
-                              <option value="">xxxxxxxxx</option>
-                            </select>
-                        </div>    
+  <div class="page">
+    <div id="navbar"></div>
 
-                        <div class="form-group col-2">
-                          <button type="submit" class="btn-buscar">Buscar</button> 
-                        </div>
-                     </div>
+    <main class="container">
+      <div>
+        <div class="header">
+          <h1 class="title">Fornecedores</h1>
+          <span class="detalhe"></span>
+        </div>
+        <br>
+        <form class="row">
+          <div class="form-group col-2">
+            <label for="filterNome" class="form-label">Filtrar por:</label>
+            <select id="filterNome" class="form-select">
+              <option value="">--Selecionar--</option>
+              <option value="1">Nome Fantasia</option>
+              <option value="2">Responsável</option>
+              <option value="2">Cidade</option>
+              <option value="2">Estado</option>
+            </select>
+          </div>
+        </form>
+      </div>
 
-                </form>
-            </div>
-            <br>
+      <div class="my-2 row g-3 gap-2">
+        <div class="input-group form-group col" role="search">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="bi bi-search"></i>
+          </span>
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </div>
+        <button class="form-group col-2 btn btn-dark" type="button">
+          Buscar
+        </button>
+        <button class="form-group col-2 btn btn-cadastrar" type="button" >
+          <a class="link" href="cadFornecedor.html">Cadastrar</a>
+        </button>
+      </div>
 
-            <hr>
-  
-            <div class=" d-grid gap-2 d-md-flex justify-content-md-end mt-5">
-              <div class="input-group mb-3 col d-flex" role="search">
-                <span class="input-group-text" id="basic-addon1">
-                  <i class="bi bi-search"></i>
-                </span>
-                <input class="form-control me-md-2" type="search" placeholder="Search" aria-label="Search">
-              </div>
-  
-              <button class="form-group col-2 btn btn-dark" type="button" >
-                <a href="cadFornecedor.html">Cadastrar</a>
-              </button>
-  
-              <button class="form-group col-2 btn btn-dark" type="button">
-                <span class=" bi bi-printer-fill">
-                Gerar PDF
-              </button>
-            </div>
-            <br>
-            
-  
-            <table class="table table-striped table-hover mt-2">
-                <thead >
-                  <tr class="table-dark">
-                    <th scope="col">ID</th>
-                    <th scope="col">Nome Fantasia</th>
-                    <th scope="col">Razao social</th>
-                    <th scope="col">Responsavel</th>
-                    <th scope="col">Contato</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Estado</th>
-                    <th scope="col">Cidade</th>
-                    
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Pratic leves</td>
-                    <td>84857203992</td>
-                    <td>Gabriel Dias</td>
-                    <td>(69) 0000-0000</td>
-                    <td>@hotmail.com</td>
-                    <td>Acre</td>
-                    <td>Ji-Paraná</td>
-                    
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Ruffles inc</td>
-                    <td>00000000000</td>
-                    <td>Luiz</td>
-                    <td>(69) 0000-0000</td>
-                    <td>@hotmail.com</td>
-                    <td>Rondonia</td>
-                    <td>Porto-Velho</td>
-                    
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Pratic leves</td>
-                    <td>84857203992</td>
-                    <td>Gabriel Dias</td>
-                    <td>(69) 0000-0000</td>
-                    <td>@hotmail.com</td>
-                    <td>Acre</td>
-                    <td>Ji-Paraná</td>
-               
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Ruffles inc</td>
-                    <td>00000000000</td>
-                    <td>Luiz</td>
-                    <td>(69) 0000-0000</td>
-                    <td>@hotmail.com</td>
-                    <td>Rondonia</td>
-                    <td>Porto-Velho</td>
-                    
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Pratic leves</td>
-                    <td>84857203992</td>
-                    <td>Gabriel Dias</td>
-                    <td>(69) 0000-0000</td>
-                    <td>@hotmail.com</td>
-                    <td>Acre</td>
-                    <td>Ji-Paraná</td>
-                  
-                  </tr>
-                  <tr>
-                    <th scope="row">6</th>
-                    <td>Ruffles inc</td>
-                    <td>00000000000</td>
-                    <td>Luiz</td>
-                    <td>(69) 0000-0000</td>
-                    <td>@hotmail.com</td>
-                    <td>Rondonia</td>
-                    <td>Porto-Velho</td>
-                  
-                  </tr>
-                  <tr>
-                    <th scope="row">7</th>
-                    <td>Pratic leves</td>
-                    <td>84857203992</td>
-                    <td>Gabriel Dias</td>
-                    <td>(69) 0000-0000</td>
-                    <td>@hotmail.com</td>
-                    <td>Acre</td>
-                    <td>Ji-Paraná</td>
-                    
-                  </tr>
-                  <tr>
-                    <th scope="row">8</th>
-                    <td>Ruffles inc</td>
-                    <td>00000000000</td>
-                    <td>Luiz</td>
-                    <td>(69) 0000-0000</td>
-                    <td>@hotmail.com</td>
-                    <td>Rondonia</td>
-                    <td>Porto-Velho</td>
-                   
-                  </tr>
-                  
-                  <thead>
-                    <tr class="table-dark">
-                        <th scope="row"></th>
-                        <td></td>
-                        <th>.</th>
-                        <th></th>
-                        <th>.</th>
-                        <th></th>
-                        <th>.</th>
-                        <th></th>
-                       
-                    </tr>
-                  </thead>
-                </tbody>
-            </table>     
-        </main>
-    </div>    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
-    <script src="/ReloadNavBar.js"></script>    
+
+      <table class="table table-striped table-hover mt-4">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">ID</th>
+            <th scope="col">Nome Fantasia</th>
+            <th scope="col">Razao social</th>
+            <th scope="col">Responsavel</th>
+            <th scope="col">Contato</th>
+            <th scope="col">Email</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Cidade</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Pratic leves</td>
+            <td>84857203992</td>
+            <td>Gabriel Dias</td>
+            <td>(69) 0000-0000</td>
+            <td>@hotmail.com</td>
+            <td>Acre</td>
+            <td>Ji-Paraná</td>
+            <td class="d-flex gap-2 align-items-center">
+              <span class="col btn btn-pencil" type="button">
+                <i class="bi bi-pencil-square"></i>
+              </span>
+              <span class="col btn btn-trash" type="button">
+                <i class="bi bi-trash3"></i>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Ruffles inc</td>
+            <td>00000000000</td>
+            <td>Luiz</td>
+            <td>(69) 0000-0000</td>
+            <td>@hotmail.com</td>
+            <td>Rondonia</td>
+            <td>Porto-Velho</td>
+            <td class="d-flex gap-2 align-items-center">
+              <span class="col btn btn-pencil" type="button">
+                <i class="bi bi-pencil-square"></i>
+              </span>
+              <span class="col btn btn-trash" type="button">
+                <i class="bi bi-trash3"></i>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Pratic leves</td>
+            <td>84857203992</td>
+            <td>Gabriel Dias</td>
+            <td>(69) 0000-0000</td>
+            <td>@hotmail.com</td>
+            <td>Acre</td>
+            <td>Ji-Paraná</td>
+            <td class="d-flex gap-2 align-items-center">
+              <span class="col btn btn-pencil" type="button">
+                <i class="bi bi-pencil-square"></i>
+              </span>
+              <span class="col btn btn-trash" type="button">
+                <i class="bi bi-trash3"></i>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Ruffles inc</td>
+            <td>00000000000</td>
+            <td>Luiz</td>
+            <td>(69) 0000-0000</td>
+            <td>@hotmail.com</td>
+            <td>Rondonia</td>
+            <td>Porto-Velho</td>
+            <td class="d-flex gap-2 align-items-center">
+              <span class="col btn btn-pencil" type="button">
+                <i class="bi bi-pencil-square"></i>
+              </span>
+              <span class="col btn btn-trash" type="button">
+                <i class="bi bi-trash3"></i>
+              </span>
+            </td>
+          </tr>
+          <thead>
+            <tr class="table-dark">
+              <th scope="row"></th>
+              <td></td>
+              <th>.</th>
+              <th></th>
+              <th>.</th>
+              <th></th>
+              <th>.</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+        </tbody>
+      </table>
+      <div class="d-flex justify-content-end ">
+        <button class=" col-2 btn btn-dark" type="button">
+          <span class=" bi bi-printer-fill">
+          Gerar PDF
+        </button>
+      </div> 
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/ReloadNavBar.js"></script>
 </body>
-
-    
