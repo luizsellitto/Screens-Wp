@@ -8,25 +8,25 @@
     color: white;
 }
 .btn-cadastrar{
-    background-color: #16423C;
+    background-color: #16423C !important;
     /* color: #E5BA73; */
 }
 .btn-cadastrar:hover{
-    background-color: #16423cdb;
+    background-color: #16423cdb !important;
 }
 
 .btn-pencil{
-    background-color: #16423C;
+    background-color: #16423C !important;
     color: white;
 }
 .btn-pencil:hover{
-    background-color: #16423cdb;
+    background-color: #16423cdb !important;
     /* color: #E5BA73; */
 }
 .btn-trash{
-    background-color: #A0153E;
-    color: white;   
+    background-color: #A0153E !important;
+    color: white;
 }
 .btn-trash:hover{
-    background-color: #a0153fd8;
+    background-color: #a0153fd8 !important;
 }
