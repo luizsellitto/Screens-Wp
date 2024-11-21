@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     MascaraCnpj();
     MascaraRg();
     MascaraCep();
+
 });
 
 function MascaraCpf() {
@@ -40,7 +41,7 @@ function MascaraRg() {
 }
 
 function MascaraCep() {
-    var rgMask = IMask(cep, {
+    var cepMask = IMask(cep, {
         mask: '00000-000'
     });
 }

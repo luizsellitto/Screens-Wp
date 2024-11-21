@@ -1,18 +1,71 @@
-input:hover {
+input:hover 
+{
     border-color: #072d08; /* Muda a cor da borda */
     background-color: white; /* Muda a cor de fundo */
     
-  }
+}
 
-  select:hover {
+select:hover 
+{
     border-color: #072d08; /* Muda a cor da borda */
     background-color: white; /* Muda a cor de fundo */
-  }
+}
 
-  .container 
-  {
+.container {
     margin-top: 5%;
     margin-left: 5%;
+    margin-right: 5%;
     width: 80%;
     align-items: center;
-  } 
+}
+
+.tittle {
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+
+.textbox {
+    margin-top: 40px;
+}
+
+.desc {
+    width: 50%;
+}
+
+.botoes {
+    margin-top: 2%;
+   
+}
+
+.btn_can {
+    color: #16423C;
+    padding: 10px;
+    border-radius: 10px;
+   
+    float: right;
+    margin-right: 8%;
+    border: 1px solid grey;
+}
+
+.btn_cad {
+    padding: 10px;
+    color: #E5BA73;
+    background-color: #16423C;
+    border-radius: 10px;
+    float: right;
+    margin-right: 10px;
+    border: 1px solid grey;
+
+}
+
+.area {
+    height: 150px;
+    width: 1500%;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.tx_borda:focus {
+    border-color: #16423C !important; 
+    
+}
