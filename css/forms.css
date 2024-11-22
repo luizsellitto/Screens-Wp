@@ -22,19 +22,25 @@
 
 .btn-pencil {
     background-color: #16423C !important;
-    color: white;
+    color: white !important;
 }
 
 .btn-pencil:hover {
     background-color: #16423cdb !important;
     /* color: #E5BA73; */
+    color: white;
+
 }
 
 .btn-trash {
     background-color: #A0153E !important;
-    color: white;
+    color: white !important;
+
 }
 
 .btn-trash:hover {
     background-color: #a0153fd8 !important;
+    /* color: white; */
+    /* color: #E5BA73 !important; */
+
 }
