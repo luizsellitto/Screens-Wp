@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Funcionários</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/forms.css">
+  </head>
+  <body>
+    <div class="page">
+      <div id="navbar"></div>
+
+      <main class="container">
+        <div>
+          <div class="header">
+            <h1 class="title">Funcionários</h1>
+            <span class="detalhe"></span>
+          </div>
+          <br>
+          <label for="filterNome" class="form-label">Filtrar por:</label>
+           
+          <form class="row">
+            <div class="form-group col-2">
+              <select id="filterNome" class="form-select">
+                <option value="">--Selecionar--</option>
+                <option value="1">Nome</option>
+                <option value="2">Sexo</option>
+                <option value="3">Estado</option>
+                <option value="4">Cidade</option>
+                </select>
+            </div>
+          </form>
+        </div>
+<!--BUSCAR-->
+        <div class="my-2 row g-3 gap-2">
+          <div class="input-group form-group col" role="search">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="bi bi-search"></i>
+            </span>
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </div>
+          <button class="form-group col-2 btn btn-dark" type="button">
+            Buscar
+          </button>
+          <a class="link form-group col-2 btn btn-cadastrar" type="button" href="cadFuncionario.html">Cadastrar</a>
+          <!-- <button class="form-group col-2 btn btn-cadastrar" type="button" >
+            <a class="link" href="cadFuncionario.html">Cadastrar</a>
+          </button> -->
+        </div>
+<!--TABLE-->
+        <table class="table table-striped table-hover mt-4">
+          <thead >
+            <tr class="table-dark">
+              <th scope="col">ID</th>
+              <th scope="col">Nome</th>
+              <th scope="col">CPF</th>
+              <th scope="col">RG</th>
+              <th scope="col">Data Nascimento</th>
+              <th scope="col">Sexo</th>
+              <th scope="col">Email</th>
+              <th scope="col">Telefone</th>
+              <th scope="col">Cidade</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Luiz Augusto</td>
+              <td>000.000.000-00</td>
+              <td>000000</td>
+              <td>00/00/00</td>
+              <td>Masculino</td>
+              <td>@gmail.com</td>
+              <td>(00) 0000-0000</td>
+              <td>Ji-Paraná</td>
+              <td>Rondonia</td>
+              <td class="d-flex gap-2 align-items-center">
+                <span class="col btn btn-pencil" type="button">
+                  <i class="bi bi-pencil-square"></i>
+                </span>
+                <span class="col btn btn-trash" type="button">
+                  <i class="bi bi-trash3"></i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Luiz Augusto</td>
+              <td>000.000.000-00</td>
+              <td>000000</td>
+              <td>00/00/00</td>
+              <td>Masculino</td>
+              <td>@gmail.com</td>
+              <td>(00) 0000-0000</td>
+              <td>Ji-Paraná</td>
+              <td>Rondonia</td>              
+              <td class="d-flex gap-2 align-items-center">
+                <span class="col btn btn-pencil" type="button">
+                  <i class="bi bi-pencil-square"></i>
+                </span>
+                <span class="col btn btn-trash" type="button">
+                  <i class="bi bi-trash3"></i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Luiz Augusto</td>
+              <td>000.000.000-00</td>
+              <td>000000</td>
+              <td>00/00/00</td>
+              <td>Masculino</td>
+              <td>@gmail.com</td>
+              <td>(00) 0000-0000</td>
+              <td>Ji-Paraná</td>
+              <td>Rondonia</td>
+              <td class="d-flex gap-2 align-items-center">
+                <span class="col btn btn-pencil" type="button">
+                  <i class="bi bi-pencil-square"></i>
+                </span>
+                <span class="col btn btn-trash" type="button">
+                  <i class="bi bi-trash3"></i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Luiz Augusto</td>
+              <td>000.000.000-00</td>
+              <td>000000</td>
+              <td>00/00/00</td>
+              <td>Masculino</td>
+              <td>@gmail.com</td>
+              <td>(00) 0000-0000</td>
+              <td>Ji-Paraná</td>
+              <td>Rondonia</td>
+              <td class="d-flex gap-2 align-items-center">
+                <span class="col btn btn-pencil" type="button">
+                  <i class="bi bi-pencil-square"></i>
+                </span>
+                <span class="col btn btn-trash" type="button">
+                  <i class="bi bi-trash3"></i>
+                </span>
+              </td>
+            </tr>
+          
+            <thead>
+              <tr class="table-dark">
+                  <th scope="row"></th>
+                  <th>.</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th>.</th>
+              </tr>
+            </thead>
+          </tbody>
+        </table>    
+        <div class="d-flex justify-content-end ">
+          <button class=" col-2 btn btn-dark" type="button">
+            <span class=" bi bi-printer-fill">
+            Gerar PDF
+          </button>
+        </div> 
+    </main>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/ReloadNavBar.js"></script>
+
+  </body>
+</html>

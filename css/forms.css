@@ -7,26 +7,34 @@
     text-decoration: none !important;
     color: white;
 }
-.btn-cadastrar{
+
+.btn-cadastrar {
     background-color: #16423C !important;
     /* color: #E5BA73; */
-}
-.btn-cadastrar:hover{
-    background-color: #16423cdb !important;
+    color: white;
+
 }
 
-.btn-pencil{
+.btn-cadastrar:hover {
+    background-color: #16423cdb !important;
+    color: white;
+}
+
+.btn-pencil {
     background-color: #16423C !important;
     color: white;
 }
-.btn-pencil:hover{
+
+.btn-pencil:hover {
     background-color: #16423cdb !important;
     /* color: #E5BA73; */
 }
-.btn-trash{
+
+.btn-trash {
     background-color: #A0153E !important;
     color: white;
 }
-.btn-trash:hover{
+
+.btn-trash:hover {
     background-color: #a0153fd8 !important;
 }
