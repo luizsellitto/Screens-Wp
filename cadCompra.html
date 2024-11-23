@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <title>Compras</title>
+    <title>Cadastro de Compras</title>
   </head>
 
   <body>
@@ -13,73 +14,70 @@
       <div id="navbar"></div>
 
       <main class="container">
-        <div>
-          <h1>Cadastro de Compra</h1>
-          <hr />
-          <form>
-            <div class="row">
-              <div class="form-group col-3">
-                <label>Fornecedor: *</label>
-                <select class="form-control">
-                  <option value="">--Selecionar--</option>
-                  <option value="">Fornecedor1</option>
-                  <option value="">Fornecedor2</option>
-                  <option value="">Fornecedor3</option>
-                  <option value="">Fornecedor4</option>
-                  <option value="">Fornecedor5</option>
-                  <option value="">Fornecedor6</option>
-                </select>
-              </div>
-              <div class="form-group col-2">
-                <label>Comprador: *</label>
-                <select class="form-control">
-                  <option value="">--Selecionar--</option>
-                  <option value="">Comprador1</option>
-                  <option value="">Comprador2</option>
-                  <option value="">Comprador3</option>
-                  <option value="">Comprador4</option>
-                  <option value="">Comprador5</option>
-                  <option value="">Comprador6</option>
-                </select>
-              </div>
-              <div class="form-group col-2">
-                <label>Forma de Pagamento: *</label>
-                <select class="form-control">
-                  <option value="">--Selecionar--</option>
-                  <option value="">Cartão - DÉBITO</option>
-                  <option value="">Cartão - CRÉDITO</option>
-                  <option value="">PIX</option>
-                  <option value="">Boleto</option>
-                </select>
-              </div>
-              <div class="form-group col-3">
-                <label>Produto: *</label>
-                <select class="form-control">
-                  <option value="">--Selecionar--</option>
-                  <option value="">Produto1</option>
-                  <option value="">Produto2</option>
-                  <option value="">Produto3</option>
-                  <option value="">Produto4</option>
-                </select>
-              </div>
-              <div class="form-group col">
-                <label>Quantidade: *</label>
-                <input type="number" class="form-control" />
-              </div>
-            </div>
-            <br />
-            <div class="row float-end">
-              <div class="form-group">
-                <button type="submit" class="btn btn-success">Comprar</button>
-              </div>
-            </div>
-            <br />
-          </form>
-          <br />
-          <hr />
+        <div class="header">
+          <h1 class="title">Cadastro de Compras</h1>
+          <span class="detalhe"></span>
         </div>
 
-        <table class="table table-striped table-hover mt-3">
+        <form>
+          <div class="row">
+            <div class="form-group col-3">
+              <label>Fornecedor: *</label>
+              <select class="form-control" name="Fornecedor">
+                <option value="">--Selecionar--</option>
+                <option value="">Fornecedor1</option>
+                <option value="">Fornecedor2</option>
+                <option value="">Fornecedor3</option>
+                <option value="">Fornecedor4</option>
+                <option value="">Fornecedor5</option>
+                <option value="">Fornecedor6</option>
+              </select>
+            </div>
+            <div class="form-group col-2">
+              <label>Comprador: *</label>
+              <select class="form-control" name="comprador">
+                <option value="">--Selecionar--</option>
+                <option value="">Comprador1</option>
+                <option value="">Comprador2</option>
+                <option value="">Comprador3</option>
+                <option value="">Comprador4</option>
+                <option value="">Comprador5</option>
+                <option value="">Comprador6</option>
+              </select>
+            </div>
+            <div class="form-group col-2">
+              <label>Forma de Pagamento: *</label>
+              <select class="form-control" name="forma-pagamento">
+                <option value="">--Selecionar--</option>
+                <option value="">Cartão - DÉBITO</option>
+                <option value="">Cartão - CRÉDITO</option>
+                <option value="">PIX</option>
+                <option value="">Boleto</option>
+              </select>
+            </div>
+            <div class="form-group col-3">
+              <label>Produto: *</label>
+              <select class="form-control" name="produto">
+                <option value="">--Selecionar--</option>
+                <option value="">Produto1</option>
+                <option value="">Produto2</option>
+                <option value="">Produto3</option>
+                <option value="">Produto4</option>
+              </select>
+            </div>
+            <div class="form-group col">
+              <label>Quantidade: *</label>
+              <input type="number" max="5" class="form-control" />
+            </div>
+          </div>
+          <div class="row float-end my-2">
+            <div class="form-group">
+              <button type="submit" class="btn btn-cadastrar">Comprar</button>
+            </div>
+          </div>
+        </form>
+
+        <table class="table table-striped table-hover">
           <thead>
             <tr class="table-dark">
               <th scope="col">ID</th>
@@ -118,65 +116,26 @@
               <td>R$5.000,00</td>
               <td>R$5.000,00</td>
             </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>Alessandra</td>
-              <td>69</td>
-              <td>R$69.000,00</td>
-              <td>R$69.000,00</td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td>Maria Luiza</td>
-              <td>100.000</td>
-              <td>R$55.000,00</td>
-              <td>R$67.000,00</td>
-            </tr>
-            <tr>
-              <th scope="row">7</th>
-              <td>Júlio César</td>
-              <td>9.999.999</td>
-              <td>R$99.999,99</td>
-              <td>R$99.999,99</td>
-            </tr>
-            <tr>
-              <th scope="row">8</th>
-              <td>Kayky</td>
-              <td>1</td>
-              <td>R$19.000,00</td>
-              <td>R$67.000,00</td>
-            </tr>
-            <thead>
-              <tr class="table-dark">
-                <th scope="row">Total</th>
-                <td></td>
-                <th>???</th>
-                <th></th>
-                <th>R$???</th>
-              </tr>
-            </thead>
           </tbody>
+          <tfoot>
+            <tr class="table-dark">
+              <th scope="row">Total</th>
+              <td></td>
+              <th>???</th>
+              <th></th>
+              <th>R$???</th>
+            </tr>
+          </tfoot>
         </table>
-        <div class="row float-end">
-          <div class="form-group">
-            <button type="submit" class="btn btn-success me-md-2">
-              <a href="listCompra.html"
-                >Salvar
-                <i class="bi bi-floppy"></i>
-              </a>
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-danger"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <a href="listCompra.html"
-                >Cancelar <i class="bi bi-arrow-left-circle"></i
-              ></a>
-            </button>
-          </div>
+        <div class="d-flex gap-3 justify-content-end mt-4">
+          <button type="reset" class="btn btn-cancelar col-2">
+            Cancelar
+            <!-- <i class="bi bi-arrow-left-circle"></i> -->
+          </button>
+          <button type="submit" class="btn btn-cadastrar col-2">
+            Cadastrar
+            <!-- <i class="bi bi-floppy"></i> -->
+          </button>
         </div>
       </main>
     </div>

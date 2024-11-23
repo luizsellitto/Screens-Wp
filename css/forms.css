@@ -15,19 +15,9 @@
     /* padding: 8px; */
 }
 
-.btn-cadastrar:hover {
-    background-color: #16423cdb !important;
-    color: #E5BA73 !important;
-}
-
 .btn-cancelar {
     background-color: #A0153E !important;
-    color: white;
-}
-
-.btn-cancelar:hover {
-    background-color: #a0153fd8 !important;
-    color: white;
+    color: white !important;
 }
 
 .btn-pencil {
@@ -35,21 +25,17 @@
     color: white !important;
 }
 
-.btn-pencil:hover {
-    background-color: #16423cdb !important;
-    color: white;
-
-}
-
 .btn-trash {
     background-color: #A0153E !important;
     color: white !important;
 }
 
+.btn-cancelar:hover,
+.btn-cadastrar:hover,
+.btn-pencil:hover,
 .btn-trash:hover {
-    background-color: #a0153fd8 !important;
+    opacity: 0.8;
 }
-
 
 input:hover,
 input:active,
