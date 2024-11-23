@@ -2,11 +2,10 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Home</title>
-    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/cadProduto.css" />
-
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <title>Cadastro de Produtos</title>
   </head>
 
   <body>
@@ -14,69 +13,72 @@
       <div id="navbar"></div>
 
       <div class="container">
-        <h1 class="tittle">Cadastro Produtos</h1>
-        <hr />
-
-        <div class="textbox">
-          <form>
-            <div class="row">
-              <div class="form-group col-8">
-                <label>Nome: *</label>
-                <input type="text" class="form-control" />
-              </div>
-
-              <div class="form-group col-3">
-                <label>Marca: *</label>
-                <input type="text" class="form-control" />
-              </div>
-            </div>
-
-            <br />
-            <div class="row">
-              <div class="form-group col-3">
-                <label>Cor:</label>
-                <input type="text" class="form-control" />
-              </div>
-
-              <div class="form-group col-3">
-                <label>Tamanho:</label>
-                <select class="form-control">
-                  <option value="">--Selecionar--</option>
-                  <option value="">P</option>
-                  <option value="">M</option>
-                  <option value="">G</option>
-                  <option value="">GG</option>
-                </select>
-              </div>
-
-              <div class="form-group col-2">
-                <label>Valor:</label>
-                <input type="text" class="form-control" />
-              </div>
-
-              <div class="form-group col-3">
-                <label>Fornecedor:</label>
-                <select class="form-control">
-                  <option value="">--Selecionar--</option>
-                  <option value=""></option>
-                </select>
-              </div>
-            </div>
-
-            <br />
-            <div class="row">
-              <div class="form-group col-1">
-                <label>Descricao:</label>
-                <textarea class="area"></textarea>
-              </div>
-            </div>
-
-            <div class="botoes">
-              <button type="submit" class="btn_can">Cancelar</button>
-              <button type="submit" class="btn_cad">Cadastrar</button>
-            </div>
-          </form>
+        <div class="header">
+          <h1 class="title">Cadastro de Produtos</h1>
+          <span class="detalhe"></span>
         </div>
+
+        <form>
+          <div class="row">
+            <div class="form-group col-6">
+              <label>Nome: *</label>
+              <input type="text" class="form-control" />
+            </div>
+
+            <div class="form-group col-3">
+              <label>Marca: *</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="form-group col-3">
+              <label>Fornecedor:</label>
+              <select class="form-control">
+                <option value="">--Selecionar--</option>
+                <option value="">Fornecedor1</option>
+                <option value="">Fornecedor2</option>
+                <option value="">Fornecedor3</option>
+              </select>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="form-group col-3">
+              <label>Cor:</label>
+              <input type="text" class="form-control" />
+            </div>
+
+            <div class="form-group col-2">
+              <label>Tamanho:</label>
+              <select class="form-control">
+                <option value="">Selecione</option>
+                <option value="">P</option>
+                <option value="">M</option>
+                <option value="">G</option>
+                <option value="">GG</option>
+              </select>
+            </div>
+
+            <div class="form-group col-2">
+              <label>Valor:</label>
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="form-group">
+              <label>Descricao:</label>
+              <textarea rows="6" class="form-control col-12"></textarea>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 justify-content-end mt-4">
+            <button type="reset" class="btn btn-cancelar col-2">
+              Cancelar
+            </button>
+            <button type="submit" class="btn btn-cadastrar col-2">
+              Cadastrar
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 

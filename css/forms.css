@@ -45,7 +45,14 @@ input:active,
 input:focus,
 select:hover,
 select:active,
-select:focus {
+select:focus,
+textarea:hover,
+textarea:active,
+textarea:focus {
     border-color: var(--focus-color) !important;
     box-shadow: 0px 0px 2px 1px var(--primary-color) !important;
+}
+
+textarea {
+    resize: none;
 }
