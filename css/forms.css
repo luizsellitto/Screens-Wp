@@ -1,3 +1,5 @@
+@import url(./base.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -5,29 +7,25 @@
 
 .link {
     text-decoration: none !important;
-    color: white;
+}
+
+.btn-cadastrar,
+.btn-pencil {
+    background-color: var(--primary-color) !important;
 }
 
 .btn-cadastrar {
-    background-color: #16423C !important;
-    color: #E5BA73 !important;
-
-    /* padding: 8px; */
+    color: var(--tertiary-color) !important;
 }
 
-.btn-cancelar {
-    background-color: #A0153E !important;
-    color: white !important;
+.btn-cancelar,
+.btn-trash {
+    background-color: var(--secondary-color) !important;
+    color: var(--neutral-white) !important;
 }
 
 .btn-pencil {
-    background-color: #16423C !important;
-    color: white !important;
-}
-
-.btn-trash {
-    background-color: #A0153E !important;
-    color: white !important;
+    color: var(--neutral-white) !important;
 }
 
 .btn-cancelar:hover,
@@ -37,18 +35,17 @@
     opacity: 0.8;
 }
 
+form hr {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
 input:hover,
 input:active,
 input:focus,
 select:hover,
 select:active,
 select:focus {
-    border-color: #072d08 !important;
-    box-shadow: 0px 0px 2px 1px #16423C !important;
+    border-color: var(--focus-color) !important;
+    box-shadow: 0px 0px 2px 1px var(--primary-color) !important;
 }
-
-/* option:hover,
-option:active,
-option:focus {
-    background-color: #16423C;
-} */

@@ -1,0 +1,13 @@
+:root {
+    /* Principais */
+    --primary-color: #16423C;
+    --secondary-color: #A0153E;
+    --tertiary-color: #E5BA73;
+
+    /* Detalhes */
+    --focus-color: #072d08;
+
+    /* Neutras */
+    --neutral-white: #ffffff;
+    --neutral-dark: #212529;
+}
