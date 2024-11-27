@@ -73,6 +73,18 @@
             <span class="d-none d-sm-inline"> Aluguéis </span>
           </a>
         </li>
+        <li class="dropdown">
+          <a class="nav-link d-flex align-items-center justify-content-start dropdown-toggle" href="#listCaixa.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fs-4 me-2 bi bi-currency-dollar"></i>
+            <span class="d-none d-sm-inline"> Caixa </span>
+          </a>
+          <ul class="dropdown-menu" id="dropdown-menu">
+            <li><a class="dropdown-item nav-link d-flex justify-content-start" href="#listRecebimento">Ver Caixas</a></li>
+            <li><a class="dropdown-item nav-link d-flex justify-content-start" href="#listRecebimento">Recebimentos</a></li>
+            <li><a class="dropdown-item nav-link d-flex justify-content-start" href="#listPagamentos">Pagamentos</a></li>
+            <li><a class="dropdown-item nav-link d-flex justify-content-start" href="#listDespesas">Despesas</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -109,18 +121,22 @@
     transition: all 0.5s ease;
   }
 
+  #dropdown-menu{
+    background-color: transparent;
+    border: none;
+
+    font-size: 1rem;
+    padding-left: 30px;
+    
+    /* position: relative !important; */
+
+    margin-bottom: 50px !important;
+  }
+
   /* Sidebar Styles */
 
   .nav {
     display: block !important;
-  }
-  .sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }
 
   .nav li a {
@@ -133,6 +149,12 @@
     text-decoration: none;
     color: #fff !important;
     background: rgba(255, 255, 255, 0.2);
+  }
+  #dropdown-menu li a:hover{
+    text-decoration: none;
+    color: #fff !important;
+
+    background: transparent !important;
   }
 
   .nav > .sidebar-brand {
