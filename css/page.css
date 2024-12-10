@@ -1,9 +1,10 @@
 .page {
     display: flex;
+    justify-content: center;
 }
 
-.container {
-    margin: 15px !important;
+.container{
+    width: 100%;
 }
 
 .title {
